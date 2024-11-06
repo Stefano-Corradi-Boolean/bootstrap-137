@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap  -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==' crossorigin='anonymous'/>
+
+  <!-- custom CSS  -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Hello Bootstrap</title>
+</head>
+<body>
+  <h1>Ciao Bootstrap</h1>
+  <div class="container my-3">
+    container
+  </div>
+  <div class="container-sm my-3">
+    container-sm
+  </div>
+  <div class="container-md my-3">
+    container-md
+  </div>
+  <div class="container-lg my-3">
+    container-lg
+  </div>
+  <div class="container-xl my-3">
+    container-xl
+  </div>
+  <div class="container-xxl my-3">
+    container-xxl
+  </div>
+  <div class="container-fluid my-3">
+    container-fluid
+  </div>
+
+  <!-- ogni colonna è grande uguale  -->
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+  </div>
+
+  <!-- 12 colonne  -->
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+    </div>
+  </div>
+
+
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-2">col-2</div>
+      <div class="col-8">col-8</div>
+      <div class="col-2">col-2</div>
+    </div>
+  </div>
+
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-3">col-3</div>
+      <div class="col-8">col-8</div>
+      <div class="col-1">col-1</div>
+    </div>
+  </div>
+
+  <!-- nesting  -->
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-2">col-2</div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-2">2</div>
+          <div class="col-8">8</div>
+          <div class="col-2">2</div>
+        </div>
+      </div>
+      <div class="col-2">col-2</div>
+    </div>
+  </div>
+
+  <!-- di default sono 3 colonne uguali e sopra md diventano 2 8 2 e da xl diventa 1 10 1 -->
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-4 col-md-2 col-xl-1">col-4 col-md-2 col-xl-1</div>
+      <div class="col-4 col-md-8 col-xl-10">col-4 col-md-8 col-xl-10</div>
+      <div class="col-4 col-md-2 col-xl-1">col-4 col-md-2 col-xl-1</div>
+    </div>
+  </div>
+
+  <!-- di defaul le colonne sono una sotto l'altra e sopra md diventano 2 8 2  -->
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-12 col-md-2">col-12 col-md-2</div>
+      <div class="col-12 col-md-8">col-12 col-md-8</div>
+      <div class="col-12 col-md-2">col-12 col-md-2</div>
+    </div>
+  </div>
+
+  <!-- gestione responsive delle colonne di dimensione uguale  -->
+  <div class="container text-center my-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-6">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+      <div class="col">4</div>
+      <div class="col">5</div>
+      <div class="col">6</div>
+    </div>
+  </div>
+
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-4 col-xxl-2">1</div>
+      <div class="col-12 col-md-6 col-xl-4 col-xxl-2">2</div>
+      <div class="col-12 col-md-6 col-xl-4 col-xxl-2">3</div>
+      <div class="col-12 col-md-6 col-xl-4 col-xxl-2">4</div>
+      <div class="col-12 col-md-6 col-xl-4 col-xxl-2">5</div>
+      <div class="col-12 col-md-6 col-xl-4 col-xxl-2">6</div>
+    </div>
+  </div>
+
+  <!-- offset-6  -->
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-3 ">col-3</div>
+      <div class="col-3 offset-6">col-3 offset-6</div>
+    </div>
+  </div>
+
+  <div class="container text-center my-3">
+    <div class="row">
+      <div class="col-6 col-lg-3">col-6 col-lg-3</div>
+      <div class="col-6 col-lg-3 offset-lg-6">col-6 col-lg-3 offset-lg-6</div>
+    </div>
+  </div>
+
+  <!-- se utilizzo un container custom devo comunque usare la regola del contaner > row >col quindi inserisco nel mio container un conatiner-fluid che va al 100% del mio  -->
+  <div class="sc-container my-3">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-6">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
